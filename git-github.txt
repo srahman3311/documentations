@@ -1,0 +1,60 @@
+
+//Step by step guide of git
+
+1. git init command - Initializes git and create an empty .git repository(hidden) inside a directory.
+
+2. git status command - Check the status of the files whether they are in the staging area or not. 
+
+3. touch .gitignore command - this command will create a file named .gitignore. Inside this .gitignore file we need to specify the name of the file/folder exactly
+   they are appearing by in the original directory
+
+
+   
+// Before adding file to the staging area .gitignore file should be created and move inside it the files we don't want to add to the github. Inside .gitignore file
+   we need to specify the exact names of the file/folder to gitingore in individual line.  
+
+// #comment text - #(pound) sign can be used to put comments inside .gitignore file.
+// *<filetype(such as .js, .txt, .html etc> - wildcard * can be used to select all files with specified filetype after * sign inside .gitignore file.
+
+
+
+// .gitignore file content example below
+.env
+bin/Debug/*     //Ignoring subfolders example
+node modules
+#environment variable file types
+*.env
+#text file types
+*.txt
+
+
+// Git Add Commands
+4. git add <filename> command - Add single file inside the staging area.
+5. git add . command - Add all file inside the staging area.
+
+// If mistakenly some files get added to the staging area then they can be moved back to the original directory by doing following commands. 
+
+// Git Remove Commands
+6. git rm --cached -r <filename> command - Move singe file back to the original directory. -r stands for recursive.
+7. git rm --cached -r . command - Move all files back to the original directory. -r stands for recursive.
+
+
+8. git commit -m "<commit message>" command - Commit the files to be hosted on github. commit message must be inside double quote. -m stands for message. 
+
+9. git log command - show all the commits with messages. 
+
+// After doing some modifications on a certain file we can check the differences. Command for this is below
+10. git diff <filename> - Will check the differences of contents of the file
+
+// Git checkout command
+11. git checkout <filename> - revert back to the original position
+
+
+// Git cloning
+12. git clone https://github.com/srahman3311/<filename>.git command - will follow the url and clone the repository into local machine. 
+
+
+// Hosting repository on github
+git branch -M main command - means I want to host on main branch
+git remote add origin https://github.com/srahman3311/<filename>.git
+git push -u origin main
