@@ -71,7 +71,7 @@ git push -u origin main
 
 // git branch command is used for both creating a new branch and seeing the list of branches. To create a new branch we need to specify the name of the branch after 
 // git branch command. But to see the list of branches all we need to do is hit git branch command. 
-2. Comman for seeing the list of branch - git branch
+2. Command for seeing the list of branch - git branch
 
 3. Command for switching to branches - git checkout <name of the branch>
 
