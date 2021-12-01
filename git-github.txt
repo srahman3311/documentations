@@ -58,3 +58,23 @@ node modules
 git branch -M main command - means I want to host on main branch
 git remote add origin https://github.com/srahman3311/<filename>.git
 git push -u origin main
+
+
+
+
+
+
+// Branching
+
+
+1. Command for creating new branch - git branch <name of the branch>
+
+// git branch command is used for both creating a new branch and seeing the list of branches. To create a new branch we need to specify the name of the branch after 
+// git branch command. But to see the list of branches all we need to do is hit git branch command. 
+2. Comman for seeing the list of branch - git branch
+
+3. Command for switching to branches - git checkout <name of the branch>
+
+// To merge branch with the master we need to first switch to master branch - command for switching git checkout master
+4. Command for merging - git merge <branch name>
+
