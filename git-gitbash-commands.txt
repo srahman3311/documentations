@@ -5,3 +5,5 @@
 5. Navigate to home directory = cd ~
 6. Navigate to one directory up = cd ..
 7. Open a file = <program name(notepad/code)> filename(with or without extension) 
+8. See the list of folders/files = ls
+9. See the list of folders/files including the hidden ones = ls -a
