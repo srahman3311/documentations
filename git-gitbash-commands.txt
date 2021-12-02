@@ -1,0 +1,7 @@
+1. Create a directory = mkdir <directory name>
+2. Create a file = touch <filename with extension>
+3. Removing/deleting a folder/file = rm -r <folder or file name>
+4. Navigate to directories = cd/<directory name>/<directory name>
+5. Navigate to home directory = cd ~
+6. Navigate to one directory up = cd ..
+7. Open a file = <program name(notepad/code)> filename(with or without extension) 

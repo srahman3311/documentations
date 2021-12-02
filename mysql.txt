@@ -1,0 +1,10 @@
+
+
+
+//Creating Database
+CREATE DATABASE dbname;
+
+//Dropping Database
+DROP DATABASE dbname;
+
+
