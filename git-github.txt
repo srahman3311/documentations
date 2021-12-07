@@ -69,6 +69,8 @@ git push -u origin main
 
 1. Command for creating new branch - git branch <name of the branch>
 
+2. Command for deleting a branch - git branch -d <name of the branch> // Make sure you are currently not inside the branch you want to delete
+
 // git branch command is used for both creating a new branch and seeing the list of branches. To create a new branch we need to specify the name of the branch after 
 // git branch command. But to see the list of branches all we need to do is hit git branch command. 
 2. Command for seeing the list of branch - git branch
