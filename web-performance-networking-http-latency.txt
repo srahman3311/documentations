@@ -1,0 +1,6 @@
+1. Bandwidth - Bandwidth is how much information you receive every second, while speed is how fast that information is received or downloaded. 
+Let's compare it to filling a bathtub. If the bathtub faucet has a wide opening, more water can flow at a faster rate than if the pipe was narrower. 
+Think of the water as the bandwidth and the rate at which the water flows as the speed.
+
+2. latency - time between sending request to server and receiving the resources back. For example when we hit google.com browser makes a get request to the google.com 
+server and google.com servers sends back the resources. Latency is the time it takes to get the resources.
