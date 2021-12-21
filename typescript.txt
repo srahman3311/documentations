@@ -1,0 +1,23 @@
+// Declaring variables
+const num: number = 5
+const str: string = "Hello world"
+const condition: boolean = false
+const mixedVariable: string | number | boolean = 5 // Can be initialized with a string or boolean as well, as it's a mixed type of string or number or boolean
+
+Note: mixed type variables are called union types
+
+
+// Declaring Arrays
+const numbers: number[] = [4, 6, 1, 90, 34] // We could initialize an empty array here or provide values
+const strings: string[] = ["ABC", "DEF", "XYZ"] // We could initialize an empty array here or provide values
+const mixedTypesArray: (string | number | boolean)[] = [5, "Hello", false] // Mixed type arrays ara called union types
+
+Note: 
+
+
+
+// Declaring Objects
+const person1: {name: string, age: number, isLoggedIn: boolean} = {name: "Rafez", age: 35, isLoggedIn: true}
+Or we can define a type first and use that type to declare an object
+type Person = { name: string, age: number, isLoggedIn: boolean }
+const person1: Person = {name: "Rafez", age: 35, isLoggedIn: true}
