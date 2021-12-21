@@ -8,16 +8,51 @@ Note: mixed type variables are called union types
 
 
 // Declaring Arrays
+// Normal Arrays
 const numbers: number[] = [4, 6, 1, 90, 34] // We could initialize an empty array here or provide values
 const strings: string[] = ["ABC", "DEF", "XYZ"] // We could initialize an empty array here or provide values
 const mixedTypesArray: (string | number | boolean)[] = [5, "Hello", false] // Mixed type arrays ara called union types
+
+// Array of objects
+const persons: { name: string, age: number, isLoggedIn: boolean } [] = [{ name: "Rafez", age: 35, isLoggedIn: false }, { name: "Ubaid", age: 4, isLoggedIn: true }]
+
+* or we could define a type first and then use that type to declare an array of objects
+type Person = { name: string, age: number, isLoggedIn: boolean }
+const persons: Person [] = [{ name: "Rafez", age: 35, isLoggedIn: false }, { name: "Ubaid", age: 4, isLoggedIn: true }]
 
 Note: 
 
 
 
 // Declaring Objects
+
 const person1: {name: string, age: number, isLoggedIn: boolean} = {name: "Rafez", age: 35, isLoggedIn: true}
-Or we can define a type first and use that type to declare an object
+
+* Or we could define a type first and use that type to declare an object
 type Person = { name: string, age: number, isLoggedIn: boolean }
 const person1: Person = {name: "Rafez", age: 35, isLoggedIn: true}
+
+Note: 
+
+
+// Functions
+
+// Functions without parameters
+const greet: Function = (): string => "Hello" // ': string' after paranthesis means this function must only return a value type of which is string
+const greet: Function = (): void => console.log("Hello") // ': void' after paranthesis means this function won't return any value 
+
+// Functions without parameters
+// Regular function with parameters
+const calculate: Function = (a: number, b: number): number | string => a + b // takes in two parameters of type number and returns a number or string
+
+// Function with optional parameters
+const getName: Function = (a: string, b: string, c?: string): string => a + " " + b // question mark (?) after c means it is an optional parameter
+
+// Function with default value of a parameter
+const getName: Function = (a: string, b: string, c: string = "good"): string => a + b + c // if third parameter isn't provided then c will have default value good
+
+// Saving a function's return value in a variable
+const result: string = getName("Rafez", "Rahman", "is Bad")
+
+Note: We only need to define type if functions are declared with a varilable
+
