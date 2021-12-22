@@ -1,3 +1,10 @@
+// tsconfig.json file creation command - For regular javascrip application (no frameworks like react/vue/angular)
+1. first we need to install typescript with command - npm install typescript -g
+2. now we will initialize typscript with the command 'tsc init', and it will create tsconfig.json file for us where we need to set some things up
+3. compiling command - tsc -w (-w watch will make sure we don't need to compile after every time we make some changes
+
+
+
 // Declaring variables
 const num: number = 5
 const str: string = "Hello world"
@@ -41,7 +48,7 @@ Note:
 const greet: Function = (): string => "Hello" // ': string' after paranthesis means this function must only return a value type of which is string
 const greet: Function = (): void => console.log("Hello") // ': void' after paranthesis means this function won't return any value 
 
-// Functions without parameters
+// Functions with parameters
 // Regular function with parameters
 const calculate: Function = (a: number, b: number): number | string => a + b // takes in two parameters of type number and returns a number or string
 
@@ -54,5 +61,5 @@ const getName: Function = (a: string, b: string, c: string = "good"): string => 
 // Saving a function's return value in a variable
 const result: string = getName("Rafez", "Rahman", "is Bad")
 
-Note: We only need to define type if functions are declared with a varilable
+Note: We only need to define type if functions are declared with var, let or const keywords
 
