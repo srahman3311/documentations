@@ -63,3 +63,17 @@ const result: string = getName("Rafez", "Rahman", "is Bad")
 
 Note: We only need to define type if functions are declared with var, let or const keywords
 
+
+
+
+// DOM And Type Casting
+
+1. (!) Exclamation mark is used to tell typescript that html element I am trying to grab exists so don't give me any warning. For example - 
+const anchor = document.querySelector("a");
+// Typescript will give us warning if we try to access the href property of the anchor tag because typescript infers that value of this anchor tag could be null. 
+// So we must explicitly tell typescript that anchor tag exists by putting an ! at the end like this - const anchor = document.querySelector("a")!;
+console.log(anchor.href); 
+// Or we could avoid using ! this way - const anchor = document.querySelector("a") as HTMLAnchorElement;
+
+2. It's better to define which element it is, like if we are grabbing a html form element by class "add_blog_form" then we can grab this form element by following way
+const addBlogForm = document.querySelector(".add_blog_form") as HTMLFormElement
