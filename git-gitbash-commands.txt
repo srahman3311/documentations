@@ -8,3 +8,4 @@
 7. Open a file = <program name(notepad/code)> filename(with or without extension) 
 8. See the list of folders/files = ls
 9. See the list of folders/files including the hidden ones = ls -a
+10. View the content of a file command - cat <filename>
