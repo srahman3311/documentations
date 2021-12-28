@@ -1,0 +1,24 @@
+Step by step guide on how to create and host an application on heroku
+
+// Regular Nodejs application
+1. Installation command - npm install -g heroku // No matter which directory someone's in, typing this command will install it globally and can be accessed from any directory
+
+2. At this step someone needs to create a heroku account by going in their website/web interface
+
+3. Logging in command - heroku login // Running this command will prompt user to put his/her credentials
+
+4. Creating an application command - heroku create // Running this command will create an application on heroku server and provide the user the application url
+
+5. Displaying the git remote repositories command - git remote -v // Running this command will show the results that will look like the followings
+heroku  https://git.heroku.com/infinite-reaches-89868.git (fetch)
+heroku  https://git.heroku.com/infinite-reaches-89868.git (push) 
+origin  https://github.com/srahman3311/abc-backend.git (fetch)   
+origin  https://github.com/srahman3311/abc-backend.git (push)
+
+6. Adding a Procfile command - touch Procfile // touc Procfile command will create a file Procfile without any file extension
+7. At this step user needs to add this line in Procfile - web: node app.js // web: node app.js means it's nodejs web application and need to run using node app.js command
+8. Adding an environtment variable command - heroku config:set API_KEY=sfhsdfhsr6885dadhjfs // Adding multiple environment variables are simply not allowed
+9. Pushing the application to heroku command - git push heroku main // It will push everthing to heroku server and application will run
+
+// Updating an application
+1. All we have to do is commit the changes using git and after that run the command git push heroku main // Don't forget to push it to your github repo before pushing it to heroku
